@@ -1,0 +1,95 @@
+h1 {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+    overflow: auto;
+}
+
+#row {
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+section {
+    border: 2px solid black;
+    background-color: darkgrey;
+}
+
+#title_1,
+#title_2,
+#title_3 {
+    font-weight: bold;
+    width: fit-content;
+    text-align: center;
+    float: right;
+    padding: 5px 30px 5px 30px;
+    font-size: 1.5em;
+    border: 2px solid black;
+    border-top-width: 1px;
+    border-right-width: 1px;
+}
+
+#title_1 {
+    background-color: rgb(214, 153, 132);
+}
+
+#title_2 {
+    background-color: rgb(197, 85, 85);
+    color: white;
+}
+
+#title_3 {
+    background-color: burlywood;
+}
+
+#first_sec,
+#second_sec,
+#third_sec {
+    font-size: 1em;
+    padding: 5px;
+    clear: both;
+}
+
+@media (min-width: 992px) {
+    section {
+        width: calc(33.33% - 26.667px);
+        float: left;
+    }
+    #section_1 {
+        margin: 20px 10px 20px 20px;
+    }
+    #section_2 {
+        margin: 20px 10px 20px 10px;
+    }
+    #section_3 {
+        margin: 20px 20px 20px 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #section_1,
+    #section_2 {
+        width: calc(50% - 30px);
+        float: left;
+    }
+    #section_1 {
+        margin: 20px 10px 20px 20px;
+    }
+    #section_2 {
+        margin: 20px 10px 20px 10px;
+    }
+    #section_3 {
+        clear: both;
+        margin: 20px 20px 20px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    section {
+        width: calc(100% - 40px);
+        margin: 20px 20px 20px 20px;
+    }
+}
